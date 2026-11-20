@@ -1,0 +1,179 @@
+/* 전체 선택자: width와 height에 padding과 border를 포함합니다.
+   margin은 요소 밖의 여백이므로 포함되지 않습니다. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: system-ui, "Malgun Gothic", sans-serif;
+    line-height: 1.6;
+}
+
+#container {
+    width: 100%;
+    max-width: 54rem;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border: 1px solid #dbe4ef;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+#header-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.4rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+#header-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    color: #475569;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+#github {
+    color: #1d4ed8;
+    text-underline-offset: 0.18em;
+}
+
+/* 클래스 선택자: class="profile-photo"가 붙은 프로필 박스를 선택합니다. */
+.profile-photo {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    place-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #bfdbfe;
+    border-radius: 1rem;
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+hr {
+    margin: 0 0 1rem;
+    border: 0;
+    border-top: 1px solid #dbe4ef;
+}
+
+h3 {
+    margin: 0 0 0.4rem;
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 650;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+.skills-group {
+    margin-bottom: 0.9rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.skill-tag {
+    /* content는 Python 같은 안쪽 텍스트입니다.
+       padding은 텍스트와 테두리 사이, border는 테두리입니다. */
+    padding: 0.15rem 0.65rem;
+    border: 1px solid #dbeafe;
+    border-radius: 1rem;
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 후손 선택자 + 그룹 선택자: .education-table 안의 th와 td를 선택합니다. */
+.education-table th,
+.education-table td {
+    padding: 0.65rem 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.education-table th {
+    width: 11rem;
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.experience-item {
+    padding: 1rem 1.25rem;
+    border: 1px solid #dbe4ef;
+    border-radius: 0.65rem;
+    background-color: #f8fafc;
+}
+
+.experience-info,
+.role {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+}
+
+.experience-info {
+    justify-content: space-between;
+}
+
+.company,
+.position,
+.project-name {
+    font-weight: 700;
+}
+
+.period,
+.rank {
+    color: #475569;
+    font-size: 0.875rem;
+}
+
+.project {
+    margin-top: 0.8rem;
+}
+
+.details {
+    margin: 0.35rem 0 0;
+    padding-left: 1.25rem;
+}
+
+@media (max-width: 560px) {
+    #container {
+        margin: 0;
+        padding: 1.25rem;
+        border-radius: 0;
+    }
+
+    .profile-photo {
+        width: 3.75rem;
+        height: 3.75rem;
+        font-size: 1.15rem;
+    }
+
+    .education-table th {
+        width: 38%;
+    }
+}
