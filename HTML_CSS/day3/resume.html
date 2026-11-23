@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>이력서</title>
+    <link rel="stylesheet" href="./resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar_container">
+            <ul class="sidebar_menu">
+                <li><a href="#">이력서</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">PDF 내려받기</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container">
+        <main>
+            <section id="resume-header">
+                <div id="header-content">
+                    <h1 id="profile-name">Bongwoo Jeon</h1>
+                    <div class="header-text">
+                        <span><i class="fa-solid fa-mobile-screen"></i>010-2006-6858</span>
+                        <span><i class="fa-solid fa-at"></i>qhddn2643@gmail.com</span>
+                        <span><a id="github" href="https://github.com/qhddn2643"><i class="fa-brands fa-github"></i>전봉우's
+                                GitHub</a></span>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./cat.png" alt="프로필 이미지">
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <section id="introduce">
+                <h2>Introduce</h2>
+                <p>안녕하세요. 컴퓨터공학을 전공한 전봉우입니다. <br>
+                    현재 AI 헬스케어 개발자 과정을 수강하며 인공지능과 웹 개발을 공부하고 있습니다. <br>
+                    새로운 기술을 배우고 직접 구현하는 것을 좋아하며, 앞으로 실생활의 문제를 해결하는 개발자로 성장하고 싶습니다.</p>
+                <ul style="list-style: square">
+                    <li>이름: 전봉우</li>
+                    <li>나이: 34세</li>
+                    <li>출생년도: 1992년</li>
+                    <li>성별: 남자</li>
+                    <li>거주지: 경남 밀양시</li>
+                </ul>
+                <br>
+                <h2>Hobby & Preference</h2>
+                <hr>
+                <ol type="i">
+                    <li>취미: 유튜브 시청, 음악 감상</li>
+                    <li>좋아하는 음식: 잡채, 닭갈비</li>
+                    <li>좋아하는 영화: 본 슈프리머시(2004), 본 얼티메이텀(2007), 다크나이트(2008), 반지의제왕 시리즈</li>
+                    <li>좋아하는 음악 장르: 장르를 크게 가리지 않지만, 멜로디와 리듬감이 좋은 음악을 선호 </li>
+                </ol>
+            </section>
+
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-group">
+                <h3>Programming Languages</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>AI / Machine Learning</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Pytorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-Learn</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Data Analysis</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Numpy</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Development Tools</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Google Colab</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h3>Office & Collaboration Tools</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Word</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">PowerPoint</span>
+                </div>
+            </div>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <hr>
+            
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3>SmartDUR 약물 안전 경고 우선순위 모델링</h3>
+                        <p class="project-meta">2026.10.26 ~ 2026.11.12 | 6인 팀</p>
+                        <ul>
+                            <li>DUR 경고 <strong>1,030건</strong> 분석,
+                                MAIN <strong>458건</strong> 및 입력 변수 35개 구성</li>
+                            <li>분석·모델링(NLP) 주 책임, LR·LightGBM·Keras 모델 비교</li>
+                            <li>팀 최종 시뮬레이션 <strong>GREY 98건(9.5%)</strong> 분류</li>
+                        </ul>
+                        <p class="project-note">
+                            ※ GREY 분류는 시뮬레이션 결과이며,
+                            실제 병원 팝업 감소 실적은 아님
+                        </p>
+                        <div class="skills-container">
+                            <span class="skill-tag">LR</span>
+                            <span class="skill-tag">LightGBM</span>
+                            <span class="skill-tag">Keras</span>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <h3>데이콘 난임 시술 임신 성공 예측 해커톤</h3>
+                        <p class="project-meta">2026.10.14 ~ 2026.10.20 | 2인 팀</p>
+                        <ul>
+                            <li>난임 시술 데이터 <strong>256,351건</strong>,
+                                입력 변수 91개 활용</li>
+                            <li>XGBoost·LightGBM·CatBoost 및 앙상블 모델 비교</li>
+                            <li>팀 Public 리더보드 <strong>ROC-AUC 0.74225</strong> 기록</li>
+                        </ul>
+                        <div class="skills-container">
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">LightGBM</span>
+                            <span class="skill-tag">CatBoost</span>
+                            <span class="skill-tag">Ensemble</span>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <h3>건강검진 데이터 기반 흡연 여부별 건강지표 분석</h3>
+                        <p class="project-meta">2026.09.14 ~ 2026.09.16 | 4인 팀</p>
+                        <ul>
+                            <li>건강검진 데이터 <strong>7,000건</strong>,
+                                원본 변수 18개 분석</li>
+                            <li>데이터 전처리·EDA·시각화 및 3가지 가설 검정</li>
+                            <li>팀 분석: TG +36.99, Hb +1.28, HDL -5.44 mg/dL
+                                평균 차이 확인 (모두 <strong>p&lt;0.001</strong>)</li>
+                            <li>개인 실험: 로지스틱 회귀
+                                <strong>정확도 69.93%</strong>,
+                                <strong>흡연자 재현율 47.08%</strong>
+                            </li>
+                        </ul>
+                        <div class="skills-container">
+                            <span class="skill-tag">EDA</span>
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">Logistic Regression</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <h2>Education</h2>
+            <hr>
+            <table class="education-table">
+                <tr>
+                    <th>2024.01 ~ 2026.05</th>
+                    <td>University of Massachusetts Lowell (컴퓨터과학 석사 졸업)</td>
+                </tr>
+                <tr>
+                    <th>2020.09 ~ 2023.12</th>
+                    <td>University of Massachusetts Lowell (컴퓨터과학 학사 졸업)</td>
+                </tr>
+                <tr>
+                    <th>2018.09 ~ 2020.05</th>
+                    <td>Bunker Hill Community College (컴퓨터과학 과정 이수 후 편입)</td>
+                </tr>
+                <tr>
+                    <th>2011.03 ~ 2017.02</th>
+                    <td>울산과학대학교 (컴퓨터정보학부 컴퓨터처리전공 공업전문학사)</td>
+                </tr>
+            </table>
+            <h2>Experience</h2>
+            <hr>
+            <div class="experience-item">
+                <div class="experience-info">
+                    <span class="company">(주)아이티공간</span>
+                    <span class="period">2017.03 ~ 2017.11</span>
+                </div>
+                <div class="role">
+                    <span class="position">사무보조</span>
+                    <span class="rank">인턴/수습/팀원</span>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <span class="project-name">사내 IT 관련 업무를 보조</span>
+                    </div>
+                    <ul class="details">
+                        <li>데이터 입력 및 정리, 엑셀 기반 자료 관리</li>
+                        <li>전산 문서 작성 보조</li>
+                        <li>시스템 또는 웹 관련 자료 확인 및 테스트 보조
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Certifications</h2>
+            <hr>
+            <table class="education-table">
+                <tr>
+                    <th>2016.07</th>
+                    <td>정보처리산업기사 (한국산업인력공단)</td>
+                </tr>
+                <tr>
+                    <th>2016.03</th>
+                    <td>컴퓨터활용능력 1급 (대한상공회의소)</td>
+                </tr>
+                <tr>
+                    <th>2016.03</th>
+                    <td>ITPLUS LEVEL2 (대한상공회의소)</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
