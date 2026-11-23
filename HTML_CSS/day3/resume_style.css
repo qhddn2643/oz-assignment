@@ -258,8 +258,20 @@ hr {
     font-weight: 600;
 }
 
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
 /* Tablet & Mobile */
 @media (max-width: 768px) {
+
+    section[id] {
+            scroll-margin-top: 100px;
+    }
 
     body {
         padding-left: 0;
