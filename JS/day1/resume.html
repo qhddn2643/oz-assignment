@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ko" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AI 헬스케어 개발자 전봉우의 포트폴리오 및 이력서">
+
+    <title>Bongwoo Jeon | Developer Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Pretendard -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resume_style.css">
+</head>
+
+<body>
+
+    <!-- 모바일 상단 메뉴 -->
+    <header class="mobile-header d-lg-none">
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu" aria-label="메뉴 열기">
+
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <span class="fw-semibold">Developer Portfolio</span>
+    </header>
+
+    <div class="resume-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="sidebarMenu"
+            aria-labelledby="sidebarTitle">
+
+            <!-- 모바일 Offcanvas 헤더 -->
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title fs-5" id="sidebarTitle">
+                    Portfolio
+                </h2>
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+                    aria-label="메뉴 닫기">
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <!-- Profile -->
+                <div class="sidebar-profile text-center">
+                    <img class="profile-img" src="./cat.png" alt="노트북을 사용하는 개발자 고양이 캐릭터">
+
+                    <h2 class="sidebar-name">Bongwoo Jeon</h2>
+
+                    <p class="sidebar-job">
+                        AI Healthcare Developer
+                    </p>
+                </div>
+
+                <hr>
+
+                <!-- Navigation -->
+                <nav class="nav flex-column gap-2" aria-label="포트폴리오 메뉴">
+
+                    <a href="#overview" class="nav-link">
+                        <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        Overview
+                    </a>
+
+                    <a href="#projects" class="nav-link">
+                        <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        Projects
+                    </a>
+
+                    <a href="#skills" class="nav-link">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        Skills
+                    </a>
+
+                    <a href="#education" class="nav-link">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        Education
+                    </a>
+
+                    <a href="#experience" class="nav-link">
+                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                        Experience
+                    </a>
+
+                    <a href="#certifications" class="nav-link">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        Certifications
+                    </a>
+                </nav>
+
+                <hr>
+
+                <!-- Sidebar Buttons -->
+                <div class="sidebar-actions">
+
+                    <button type="button" id="printButton" class="btn btn-outline-light w-100">
+
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        Save as PDF
+                    </button>
+
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- Main Container -->
+        <div class="resume-container">
+
+            <main>
+
+                <!-- Overview -->
+                <section id="overview">
+
+                    <div class="card overview-card">
+                        <div class="card-body">
+
+                            <p class="eyebrow">
+                                AI &amp; SOFTWARE DEVELOPMENT
+                            </p>
+
+                            <h1 class="profile-name">
+                                Bongwoo Jeon
+                            </h1>
+
+                            <p class="profile-job">
+                                AI Healthcare Developer
+                            </p>
+
+                            <p class="overview-description">
+                                컴퓨터과학을 전공하고 AI와 데이터 분석을 활용한
+                                헬스케어 서비스 개발을 공부하고 있습니다.
+                                기술을 통해 실제 문제를 해결하는 개발자를
+                                목표로 하고 있습니다.
+                            </p>
+
+                            <!-- Contact Buttons -->
+                            <div class="d-flex flex-wrap gap-2">
+
+                                <a href="https://github.com/qhddn2643" class="btn btn-accent" target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fa-brands fa-github me-2" aria-hidden="true"></i>
+                                    GitHub
+                                </a>
+
+                                <a href="mailto:qhddn2643@gmail.com" class="btn btn-outline-accent" id="emailLink">
+
+                                    <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
+                                    Contact
+                                </a>
+
+                            </div>
+
+                            <p id="copyStatus" class="small mt-2 mb-0" role="status" aria-live="polite">
+                            </p>
+
+                            <!-- PDF 인쇄 시 연락처 표시 -->
+                            <p class="d-none d-print-block small mb-0">
+                                qhddn2643@gmail.com · github.com/qhddn2643
+                            </p>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Projects -->
+                <section id="projects">
+
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        Projects
+                    </h2>
+
+                    <div class="projects-container">
+
+                        <!-- SmartDUR -->
+                        <article class="card project-card featured-project">
+
+                            <div class="card-body">
+
+                                <p class="project-category">
+                                    <i class="fa-solid fa-shield-halved me-1" aria-hidden="true"></i>
+                                    CAPSTONE PROJECT
+                                </p>
+
+                                <h3 class="card-title">SmartDUR</h3>
+
+                                <p class="project-description">
+                                    약물 안전 경고 우선순위 모델링
+                                </p>
+
+                                <p class="project-meta">
+                                    <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>
+                                    2026.10.26 ~ 2026.11.12
+
+                                    <span class="mx-1">·</span>
+
+                                    <i class="fa-solid fa-users me-1" aria-hidden="true"></i>
+                                    6인 팀
+                                </p>
+
+                                <!-- Metrics -->
+                                <div class="metrics-container">
+
+                                    <div class="metric-box">
+                                        <span class="metric-value">1,030</span>
+                                        <small>분석 데이터</small>
+                                    </div>
+
+                                    <div class="metric-box">
+                                        <span class="metric-value">35</span>
+                                        <small>입력 변수</small>
+                                    </div>
+
+                                    <div class="metric-box">
+                                        <span class="metric-value">9.5%</span>
+                                        <small>GREY 분류율</small>
+                                    </div>
+
+                                </div>
+
+                                <!-- Summary -->
+                                <ul class="project-summary">
+                                    <li>MAIN 데이터 458건 구성</li>
+                                    <li>분석·모델링(NLP) 주 책임</li>
+                                    <li>LR, LightGBM, Keras 모델 비교</li>
+                                </ul>
+
+                                <p class="project-note">
+                                    <i class="fa-solid fa-circle-info me-1" aria-hidden="true"></i>
+                                    GREY 분류율은 팀 시뮬레이션 결과이며,
+                                    실제 병원 팝업 감소 실적은 아닙니다.
+                                </p>
+
+                                <!-- Project Tags -->
+                                <div class="project-tags">
+                                    <span class="badge skill-tag">Python</span>
+                                    <span class="badge skill-tag">Logistic Regression</span>
+                                    <span class="badge skill-tag">LightGBM</span>
+                                    <span class="badge skill-tag">Keras</span>
+                                </div>
+
+                                <!-- Collapse Button -->
+                                <div class="project-actions">
+
+                                    <button type="button" class="btn btn-outline-accent detail-button"
+                                        data-bs-toggle="collapse" data-bs-target="#smartdurDetails"
+                                        aria-expanded="false" aria-controls="smartdurDetails">
+
+                                        View Details
+
+                                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </button>
+
+                                </div>
+
+                                <!-- Project Details -->
+                                <div class="collapse project-details" id="smartdurDetails">
+
+                                    <div class="detail-content">
+
+                                        <h4>Problem</h4>
+                                        <p>
+                                            약물 안전 경고의 임상적 중요도를 구분하고,
+                                            의료진이 중요한 경고를 우선 검토할 수 있도록
+                                            경고의 우선순위를 분류하는 프로젝트입니다.
+                                        </p>
+
+                                        <h4>My Contribution</h4>
+                                        <ul>
+                                            <li>모델 학습용 MAIN 데이터 458건 구성</li>
+                                            <li>입력 변수 35개 기반 분석 및 모델링</li>
+                                            <li>LR, LightGBM, Keras 모델 비교</li>
+                                        </ul>
+
+                                        <h4>Result</h4>
+                                        <p>
+                                            팀 최종 시뮬레이션에서 전체 경고
+                                            1,030건 중 98건을 GREY로 분류했습니다.
+                                        </p>
+
+                                        <h4>Limitation</h4>
+                                        <p class="mb-0">
+                                            실제 의료기관에서의 경고 감소 효과와
+                                            임상적 안전성은 별도로 검증해야 합니다.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Infertility Prediction -->
+                        <article class="card project-card">
+
+                            <div class="card-body">
+
+                                <p class="project-category">
+                                    <i class="fa-solid fa-flask me-1" aria-hidden="true"></i>
+                                    HACKATHON
+                                </p>
+
+                                <h3 class="card-title">
+                                    난임 시술 임신 성공 예측
+                                </h3>
+
+                                <p class="project-description">
+                                    데이콘 난임 예측 해커톤
+                                </p>
+
+                                <p class="project-meta">
+                                    <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>
+                                    2026.10.14 ~ 2026.10.20
+
+                                    <span class="mx-1">·</span>
+
+                                    <i class="fa-solid fa-users me-1" aria-hidden="true"></i>
+                                    2인 팀
+                                </p>
+
+                                <div class="metric-box single-metric">
+                                    <span class="metric-value">0.74225</span>
+                                    <small>팀 Public ROC-AUC</small>
+                                </div>
+
+                                <ul class="project-summary">
+                                    <li>난임 시술 데이터 256,351건 활용</li>
+                                    <li>입력 변수 91개 구성</li>
+                                    <li>머신러닝 및 앙상블 모델 비교</li>
+                                </ul>
+
+                                <div class="project-tags">
+                                    <span class="badge skill-tag">XGBoost</span>
+                                    <span class="badge skill-tag">LightGBM</span>
+                                    <span class="badge skill-tag">CatBoost</span>
+                                    <span class="badge skill-tag">Ensemble</span>
+                                </div>
+
+                                <div class="project-actions">
+
+                                    <button type="button" class="btn btn-outline-accent detail-button"
+                                        data-bs-toggle="collapse" data-bs-target="#infertilityDetails"
+                                        aria-expanded="false" aria-controls="infertilityDetails">
+
+                                        View Details
+
+                                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="collapse project-details" id="infertilityDetails">
+
+                                    <div class="detail-content">
+
+                                        <h4>Problem</h4>
+                                        <p>
+                                            난임 시술 데이터를 활용하여
+                                            임신 성공 여부를 예측하는
+                                            이진 분류 프로젝트입니다.
+                                        </p>
+
+                                        <h4>Approach</h4>
+                                        <ul>
+                                            <li>데이터 전처리 및 변수 구성</li>
+                                            <li>XGBoost, LightGBM, CatBoost 비교</li>
+                                            <li>앙상블 모델 비교</li>
+                                        </ul>
+
+                                        <h4>Result</h4>
+                                        <p>
+                                            팀 Public 리더보드에서
+                                            ROC-AUC 0.74225를 기록했습니다.
+                                        </p>
+
+                                        <h4>Limitation</h4>
+                                        <p class="mb-0">
+                                            Public 리더보드 성능은 실제 임상 환경에서의
+                                            일반화 성능을 의미하지 않습니다.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Smoking Analysis -->
+                        <article class="card project-card">
+
+                            <div class="card-body">
+
+                                <p class="project-category">
+                                    <i class="fa-solid fa-chart-line me-1" aria-hidden="true"></i>
+                                    DATA ANALYSIS
+                                </p>
+
+                                <h3 class="card-title">
+                                    흡연 여부별 건강지표 분석
+                                </h3>
+
+                                <p class="project-description">
+                                    건강검진 데이터 기반 통계 분석
+                                </p>
+
+                                <p class="project-meta">
+                                    <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>
+                                    2026.09.14 ~ 2026.09.16
+
+                                    <span class="mx-1">·</span>
+
+                                    <i class="fa-solid fa-users me-1" aria-hidden="true"></i>
+                                    4인 팀
+                                </p>
+
+                                <div class="metric-box single-metric">
+                                    <span class="metric-value">7,000</span>
+                                    <small>건강검진 데이터 분석 건수</small>
+                                </div>
+
+                                <ul class="project-summary">
+                                    <li>원본 변수 18개 분석</li>
+                                    <li>데이터 전처리, EDA 및 시각화</li>
+                                    <li>3가지 통계적 가설 검정</li>
+                                </ul>
+
+                                <div class="project-tags">
+                                    <span class="badge skill-tag">EDA</span>
+                                    <span class="badge skill-tag">Statistics</span>
+                                    <span class="badge skill-tag">Logistic Regression</span>
+                                </div>
+
+                                <div class="project-actions">
+
+                                    <button type="button" class="btn btn-outline-accent detail-button"
+                                        data-bs-toggle="collapse" data-bs-target="#smokingDetails" aria-expanded="false"
+                                        aria-controls="smokingDetails">
+
+                                        View Details
+
+                                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="collapse project-details" id="smokingDetails">
+
+                                    <div class="detail-content">
+
+                                        <h4>Problem</h4>
+                                        <p>
+                                            건강검진 데이터를 기반으로 흡연 여부에 따른
+                                            주요 건강지표의 차이를 분석하는 프로젝트입니다.
+                                        </p>
+
+                                        <h4>Team Result</h4>
+                                        <ul>
+                                            <li>TG: +36.99 mg/dL</li>
+                                            <li>Hb: +1.28 g/dL</li>
+                                            <li>HDL: −5.44 mg/dL</li>
+                                            <li>모든 평균 차이 검정 p&lt;0.001</li>
+                                        </ul>
+
+                                        <h4>Personal Experiment</h4>
+                                        <ul>
+                                            <li>Logistic Regression 적용</li>
+                                            <li>정확도: 69.93%</li>
+                                            <li>흡연자 재현율: 47.08%</li>
+                                        </ul>
+
+                                        <h4>Limitation</h4>
+                                        <p class="mb-0">
+                                            통계적 연관성만으로 인과관계를 확정할 수 없으며,
+                                            흡연자 재현율 개선이 필요합니다.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills">
+
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        Skills
+                    </h2>
+
+                    <div class="row g-3">
+
+                        <!-- Programming Languages -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                        Programming Languages
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">Python</span>
+                                        <span class="badge skill-tag">SQL</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Web Development -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                                        Web Development
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">HTML</span>
+                                        <span class="badge skill-tag">CSS</span>
+                                        <span class="badge skill-tag">Bootstrap</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- AI / Machine Learning -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                                        AI / Machine Learning
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">PyTorch</span>
+                                        <span class="badge skill-tag">TensorFlow</span>
+                                        <span class="badge skill-tag">Scikit-learn</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Data Analysis -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
+                                        Data Analysis
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">Pandas</span>
+                                        <span class="badge skill-tag">NumPy</span>
+                                        <span class="badge skill-tag">Matplotlib</span>
+                                        <span class="badge skill-tag">Seaborn</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Development Tools -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                        Development Tools
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">Git</span>
+                                        <span class="badge skill-tag">GitHub</span>
+                                        <span class="badge skill-tag">VS Code</span>
+                                        <span class="badge skill-tag">Jupyter</span>
+                                        <span class="badge skill-tag">Colab</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Office & Collaboration -->
+                        <div class="col-12 col-md-6 col-xxl-4">
+
+                            <div class="card skill-card h-100">
+                                <div class="card-body">
+
+                                    <h3 class="skill-title">
+                                        <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                                        Office &amp; Collaboration
+                                    </h3>
+
+                                    <div class="skills-container">
+                                        <span class="badge skill-tag">Word</span>
+                                        <span class="badge skill-tag">Excel</span>
+                                        <span class="badge skill-tag">PowerPoint</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Education / Experience / Certifications -->
+                <div class="background-container">
+
+                    <!-- Education -->
+                    <section id="education">
+
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            Education
+                        </h2>
+
+                        <div class="card">
+                            <div class="card-body education-timeline">
+
+                                <!-- Master's Degree -->
+                                <div class="education-item">
+
+                                    <div class="education-icon">
+                                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="item-period">
+                                            2024.01 ~ 2026.05
+                                        </p>
+
+                                        <h3 class="education-title">
+                                            University of Massachusetts Lowell
+                                        </h3>
+
+                                        <p class="education-degree">
+                                            컴퓨터과학 석사
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Bachelor's Degree -->
+                                <div class="education-item">
+
+                                    <div class="education-icon">
+                                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="item-period">
+                                            2020.09 ~ 2023.12
+                                        </p>
+
+                                        <h3 class="education-title">
+                                            University of Massachusetts Lowell
+                                        </h3>
+
+                                        <p class="education-degree">
+                                            컴퓨터과학 학사
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Community College -->
+                                <div class="education-item">
+
+                                    <div class="education-icon">
+                                        <i class="fa-solid fa-school" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="item-period">
+                                            2018.09 ~ 2020.05
+                                        </p>
+
+                                        <h3 class="education-title">
+                                            Bunker Hill Community College
+                                        </h3>
+
+                                        <p class="education-degree">
+                                            컴퓨터과학 과정 이수 후 편입
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- Associate Degree -->
+                                <div class="education-item">
+
+                                    <div class="education-icon">
+                                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="item-period">
+                                            2011.03 ~ 2017.02
+                                        </p>
+
+                                        <h3 class="education-title">
+                                            울산과학대학교
+                                        </h3>
+
+                                        <p class="education-degree">
+                                            컴퓨터처리전공 공업전문학사
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Experience -->
+                    <section id="experience">
+
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                            Experience
+                        </h2>
+
+                        <div class="card experience-card">
+
+                            <div class="card-body">
+
+                                <h3 class="company-name">
+                                    (주)아이티공간
+                                </h3>
+
+                                <p class="item-period">
+                                    <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>
+                                    2017.03 ~ 2017.11
+                                </p>
+
+                                <div class="experience-role">
+
+                                    <span class="position">사무보조</span>
+
+                                    <span class="text-muted small">
+                                        인턴 / 수습 / 팀원
+                                    </span>
+
+                                </div>
+
+                                <hr>
+
+                                <h4 class="experience-heading">
+                                    주요 담당 업무
+                                </h4>
+
+                                <ul class="experience-details">
+                                    <li>데이터 입력 및 정리, 엑셀 기반 자료 관리</li>
+                                    <li>전산 문서 작성 보조</li>
+                                    <li>시스템 또는 웹 관련 자료 확인 및 테스트 보조</li>
+                                </ul>
+
+                                <div class="skills-container">
+                                    <span class="badge skill-tag">Excel</span>
+                                    <span class="badge skill-tag">Documentation</span>
+                                    <span class="badge skill-tag">Testing</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Certifications -->
+                    <section id="certifications">
+
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-award" aria-hidden="true"></i>
+                            Certifications
+                        </h2>
+
+                        <div class="card certification-card">
+
+                            <div class="list-group list-group-flush">
+
+                                <!-- 정보처리산업기사 -->
+                                <div class="list-group-item certification-item">
+
+                                    <div class="certification-icon">
+                                        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="certification-title">
+                                            정보처리산업기사
+                                        </h3>
+
+                                        <p class="certification-agency">
+                                            한국산업인력공단
+                                        </p>
+
+                                        <p class="item-period">
+                                            2016.07
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- 컴퓨터활용능력 -->
+                                <div class="list-group-item certification-item">
+
+                                    <div class="certification-icon">
+                                        <i class="fa-solid fa-table-cells" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="certification-title">
+                                            컴퓨터활용능력 1급
+                                        </h3>
+
+                                        <p class="certification-agency">
+                                            대한상공회의소
+                                        </p>
+
+                                        <p class="item-period">
+                                            2016.03
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- ITPLUS -->
+                                <div class="list-group-item certification-item">
+
+                                    <div class="certification-icon">
+                                        <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="certification-title">
+                                            ITPLUS LEVEL2
+                                        </h3>
+
+                                        <p class="certification-agency">
+                                            대한상공회의소
+                                        </p>
+
+                                        <p class="item-period">
+                                            2016.03
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer>
+
+                <p>&copy; 2026 전봉우. All rights reserved.</p>
+
+                <a href="https://github.com/qhddn2643" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub 프로필">
+
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="맨 위로 이동" hidden>
+
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
